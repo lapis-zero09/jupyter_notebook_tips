@@ -1,0 +1,201 @@
+:root {
+  --cell-background-color: black;
+  --background-color: #1e1e1e;
+  --dark-gray: #75715e;
+  --gray: #6e6c6c;
+  --purple: #ae81ff;
+  --pink: #f92672;
+  --red: red;
+  --error-red: rgba(249, 38, 114, 0.4);
+  --orange: #fd971f;
+  --yellow: #e6db74;
+  --green: #a6e22e;
+  --blue: #0095ff;
+  --light-blue: rgb(102, 217, 239);
+  --cyan: cyan;
+  --offwhite: #f8f8f0;
+  --white: #f8f8f2;
+}
+
+body {
+  color: var(--offwhite);
+  background-color: var(--cell-background-color);
+  background: var(--cell-background-color);
+}
+
+.notebook-cell-list > div,
+.inputarea,
+.cell-execution-container,
+.CodeMirror-sizer,
+.notebook-content,
+div.markdown,
+.output-info,
+.text-top-div,
+.main-content,
+.CodeMirror-scroll {
+  background: var(--background-color);
+  border: 1px;
+  border-color: var(--background-color);
+}
+
+.code.up-to-date * .execution-count {
+  color: var(--gray);
+}
+
+.CodeMirror pre {
+  font-family: Fira Code, 源真ゴシック等幅, monospace;
+  font-size: 10pt;
+  line-height: 150%;
+  color: var(--offwhite);
+  background: var(--cell-background-color);
+}
+
+.CodeMirror-linenumber {
+  color: var(--dark-gray);
+}
+.CodeMirror-cursor {
+  border-left: 2px solid var(--blue);
+}
+.cm-s-default .cm-comment {
+  color: var(--dark-gray);
+  font-style: italic;
+}
+.cm-s-default .cm-atom {
+  color: var(--purple);
+}
+.cm-s-default .cm-number {
+  color: var(--purple);
+}
+.cm-s-default .cm-property {
+  color: var(--offwhite);
+}
+.cm-s-default .cm-attribute {
+  color: var(--offwhite);
+}
+.cm-s-default .cm-keyword {
+  color: var(--pink);
+  font-weight: normal;
+}
+.cm-s-default .cm-string {
+  color: var(--yellow);
+}
+.cm-s-default .cm-meta {
+  color: var(--orange);
+}
+.cm-s-default .cm-operator {
+  color: var(--pink);
+}
+.cm-s-default .cm-builtin {
+  color: var(--light-blue);
+}
+.cm-s-default .cm-variable {
+  color: var(--offwhite);
+}
+.cm-s-default .cm-variable-2 {
+  color: var(--green);
+}
+.cm-s-default .cm-variable-3 {
+  color: var(--orange);
+}
+.cm-s-default .cm-def {
+  color: var(--green);
+  font-weight: normal;
+}
+.cm-s-default .cm-error {
+  background: var(--error-red);
+}
+.cm-s-default .cm-tag,
+.cm-tag.markdown-mathjax {
+  color: var(--purple) !important;
+}
+.cm-s-default .cm-link {
+  color: var(--green);
+}
+.cm-s-default .cm-storage {
+  color: var(--purple);
+}
+.cm-s-default .cm-entity,
+.cm-entity.markdown-mathjax {
+  color: var(--green);
+}
+.cm-s-default .cm-quote {
+  color: var(--yellow);
+}
+.cm-bracket.markdown-mathjax {
+  color: var(--red) !important;
+}
+
+/* markdown */
+div.CodeMirror span.CodeMirror-matchingbracket {
+  color: var(--white);
+  background-color: var(--background-color);
+}
+div.CodeMirror span.CodeMirror-nonmatchingbracket {
+  color: var(--white);
+  background: rgba(249, 38, 114, 0.4);
+}
+
+.cm-header {
+  color: var(--green) !important;
+}
+
+.markdown-mathjax {
+  color: var(--cyan) !important;
+}
+
+h1 {
+  color: #1de9b6;
+  font-size: 170%;
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+}
+h2 {
+  color: #a7ffeb;
+  font-size: 150%;
+  font-style: normal;
+  font-weight: normal;
+}
+h3 {
+  color: #1de9b6;
+  font-size: 140%;
+  font-style: normal;
+  font-weight: normal;
+}
+h4 {
+  color: #a7ffeb;
+  font-size: 110%;
+  font-style: normal;
+  font-weight: normal;
+}
+h5 {
+  color: #1de9b6;
+  font-size: 100%;
+  font-style: normal;
+  font-weight: normal;
+}
+
+table {
+  margin-left: 8px;
+  margin-right: auto;
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  color: var(--background-color);
+}
+
+thead {
+  background: var(--background-color);
+  color: #d4d4d4;
+}
+
+tbody tr:nth-child(odd) {
+  background: #e4e4e4;
+}
+tbody tr {
+  background: #d3d3d3;
+}
+tbody tr:hover {
+  background: #878787;
+}

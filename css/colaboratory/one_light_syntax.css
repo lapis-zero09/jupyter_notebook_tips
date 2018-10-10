@@ -1,0 +1,36 @@
+.cm-s-default .cm-comment {
+  color: #75715e;
+  font-style: italic;
+}
+.cm-s-default .cm-keyword {
+  color: hsl(301, 63%, 40%);
+  font-weight: normal;
+}
+.cm-s-default .cm-variable {
+  color: hsl(230, 8%, 24%);
+}
+.cm-s-default .cm-variable-2 {
+  color: hsl(230, 8%, 24%);
+}
+.cm-s-default .cm-variable-3 {
+  color: hsl(230, 8%, 24%);
+}
+.cm-s-default .cm-operator {
+  color: hsl(230, 8%, 24%);
+}
+.cm-s-default .cm-def {
+  color: hsl(221, 87%, 60%);
+  font-weight: normal;
+}
+.cm-s-default .cm-property {
+  color: hsl(221, 87%, 60%);
+}
+.cm-s-default .cm-builtin {
+  color: hsl(198, 99%, 37%);
+}
+.cm-s-default .cm-number {
+  color: hsl(41, 99%, 30%);
+}
+.cm-s-default .cm-string {
+  color: hsl(119, 34%, 47%);
+}
