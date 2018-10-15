@@ -332,7 +332,6 @@ div.CodeMirror pre {
   /*   background: var(--cell-background-color) */
 }
 div.CodeMirror-gutters,
-#texteditor-backdrop pre,
 .CodeMirror-sizer {
   border: none;
   border-right: 2px solid var(--gutter);
