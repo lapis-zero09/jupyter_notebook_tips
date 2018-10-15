@@ -329,11 +329,11 @@ div.CodeMirror pre {
   font-size: 10pt;
   line-height: 150%;
   color: var(--font-color);
-  background: var(--cell-background-color);
+  /*   background: var(--cell-background-color) */
 }
 div.CodeMirror-gutters,
-#texteditor-backdrop #texteditor-container .CodeMirror-gutter,
-#texteditor-backdrop #texteditor-container .CodeMirror-gutters {
+#texteditor-backdrop pre,
+.CodeMirror-sizer {
   border: none;
   border-right: 2px solid var(--gutter);
   background-color: var(--cell-background-color);
@@ -341,6 +341,12 @@ div.CodeMirror-gutters,
   border-radius: 0px;
   white-space: nowrap;
 }
+#texteditor-backdrop,
+#texteditor-backdrop #texteditor-container .CodeMirror-gutter,
+#texteditor-backdrop #texteditor-container .CodeMirror-gutters {
+  background: var(--background-color);
+}
+
 .CodeMirror-linenumber,
 div.CodeMirror-linenumber,
 .CodeMirror-gutter.CodeMirror-linenumberdiv.CodeMirror-gutter.CodeMirror-linenumber {
