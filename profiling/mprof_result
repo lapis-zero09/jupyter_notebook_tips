@@ -1,0 +1,10 @@
+Filename: /Users/01024162/Documents/github.com/lapis-zero09/jupyter_notebook_tips/profiling/foo.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     6     90.3 MiB     90.3 MiB   def foo():
+     7     90.3 MiB      0.0 MiB       df = pd.DataFrame(np.empty((100, 200)))
+     8     90.3 MiB      0.0 MiB       sleep(2)
+     9     90.4 MiB      0.0 MiB       for _ in range(50):
+    10     90.4 MiB      0.0 MiB           df = df.applymap(lambda x: x+1000)
+    11     90.4 MiB      0.0 MiB       return df.values
