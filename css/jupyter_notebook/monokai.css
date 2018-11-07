@@ -773,3 +773,8 @@ div.form-control,
   border-color: var(--divider);
   margin-bottom: 0px;
 }
+
+.celltoolbar {
+  background: var(--background-color);
+  border: var(--gutter);
+}
